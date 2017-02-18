@@ -29,6 +29,12 @@ app.get('/article-one', function (req, res)
 {
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+
+app.get('/ammu', function (req, res)
+{
+   res.sendFile(path.join(__dirname, 'ui', 'ammu.html'));
+});
+
 app.get('/article-two', function (req, res)
 {
    res.send("article two is requested and will be served"); 
