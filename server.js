@@ -19,12 +19,15 @@ app.get('/ui/a.jpg', function (req, res) {
 app.get('/ui/av.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'av.jpg'));
 });
+app.get('/ui/asd.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'asd.jpg'));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 app.get('/article-one', function (req, res)
 {
-   res.send("article one is requested and will be served"); 
+   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 app.get('/article-two', function (req, res)
 {
