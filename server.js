@@ -54,7 +54,7 @@ var temp=`
         ${links}
         </div>
         <hr/>
-    <div class="stuff">
+    <div class="center">
          <div>
             <img src="/ui/asd.jpg" class="img-large"/>
         </div>
