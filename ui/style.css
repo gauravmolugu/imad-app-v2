@@ -20,9 +20,7 @@ body {
     height: 200px;
 }
 .stuff{
-color: red;
-max-width:800px;
-margin: 0 auto;
-padding-left: 100px;
-padding-right:100px;
+    color: red;
+    margin: 100;
+    padding-left: 500;
 }
