@@ -59,7 +59,10 @@ var temp=`
             <img src="/ui/asd.jpg" class="img-large"/>
         </div>
         ${heading}
+        </div>
+        <div>
         ${date}
+        </div>
         ${content}
     </div>
     </body>
