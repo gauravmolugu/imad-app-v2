@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
- articleone:{    title:'gaurav',
+var articles= {
+ `articleone`: {    title:'gaurav',
     date:'23 feb',
     heading:'this is article one',
     link:`
@@ -15,11 +15,11 @@ var articles={
             </div>
             
             <div>
-                <a href="/article-two">go to aricle-two</a>
+                <a href="/articletwo">go to aricle-two</a>
             </div>
             
             <div>
-                <a href="/article-three">go to article-three</a>
+                <a href="/articlethree">go to article-three</a>
             </div>
 `,
     content:`
@@ -36,12 +36,12 @@ var articles={
        </p>
     `,
  }, 
- articletwo:{
+ `articletwo`:{
     title:'gaurav',
     date:'24 feb',
     heading:'this is article two',
  },
- articlethree:{
+ `articlethree`:{
     title:'gaurav',
     date:'25 feb',
     heading:'this is article three',
@@ -111,6 +111,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/:bla', function (req, res)
 {
+   var bla=req.params.bla;
    res.send(articleone(articles[bla]));
 });
 
