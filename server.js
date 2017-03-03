@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content={
-    title:'gaurav',
+var articles={
+ articleone:{    title:'gaurav',
     date:'23 feb',
     heading:'this is article one',
     link:`
@@ -35,6 +35,17 @@ var content={
            THIS IS A PARAGRAPH IN WHICH ALL THE LETTERS AE IN CAPS AND LETS SEE HOW THIS WORKS.
        </p>
     `,
+ }, 
+ articletwo:{
+    title:'gaurav',
+    date:'24 feb',
+    heading:'this is article two',
+ },
+ articlethree:{
+    title:'gaurav',
+    date:'25 feb',
+    heading:'this is article three',
+ },
 };
 
 function articleone(data){
@@ -98,24 +109,11 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/article-one', function (req, res)
+app.get('/:bla', function (req, res)
 {
-   res.send(articleone(content));
+   res.send(articleone(articles[bla]));
 });
 
-app.get('/ammu', function (req, res)
-{
-   res.sendFile(path.join(__dirname, 'ui', 'ammu.html'));
-});
-
-app.get('/article-two', function (req, res)
-{
-   res.send("article two is requested and will be served"); 
-});
-app.get('/article-three', function (req, res)
-{
-   res.send("article three is requested and will be served"); 
-});
 
 
 
