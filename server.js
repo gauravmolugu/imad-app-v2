@@ -46,7 +46,6 @@ var articles= {
     date:'25 feb',
     heading:'this is article three',
  },
-
 };
 
 function articleone(data){
