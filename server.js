@@ -83,6 +83,9 @@ var temp=`
 return temp;
 }
 
+app.get('/ammu', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','ammu.html'));
+});
 
 
 app.get('/', function (req, res) {
