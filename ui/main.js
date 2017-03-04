@@ -4,6 +4,11 @@ var text=document.getElementById('text');
     text.innerHTML="bla bla bla";
 
 var pic=document.getElementById('image');
+var marginleft=0;
+function moveright(){
+    marginleft=marginleft+2;
+    pic.style.marginleft=marginleft+'px';
+}
 pic.onclick=function(){
-    pic.style.marginLeft='200px';
+    var interval=setinterval(moveright,10);
 };
