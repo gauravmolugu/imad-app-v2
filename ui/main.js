@@ -5,5 +5,5 @@ var text=document.getElementById('text');
 
 var pic=document.getElementById('image');
 pic.onclick=function(){
-    pic.style.marginleft='100px';
+    pic.style.margin='200px';
 };
