@@ -4,5 +4,5 @@ var text=document.getElementById('text');
 text.innerHTML="bla bla bla";
 var pic=document.getElementById('img');
 pic.onclick=function(){
-    img.style.marginleft='200px';
+    pic.style.marginleft='200px';
 };
