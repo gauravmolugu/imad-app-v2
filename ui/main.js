@@ -22,7 +22,7 @@ button.onclick=function(){
  {
      if(req.readyState===XMLHttpRequest.DONE)
      {
-         if(req.status===100)
+         if(req.status===200)
          {
              var counter=req.responseText;
              var span=document.getElementById('count');
