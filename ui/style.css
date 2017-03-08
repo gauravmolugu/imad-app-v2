@@ -8,8 +8,8 @@ body {
     text-align: center;
     background-color: darkgrey;
     margin-top: 75px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .text-big {
