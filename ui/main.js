@@ -17,7 +17,27 @@ pic.onclick=function(){
 var button=document.getElementById('counter');
 var c=0;
 button.onclick=function(){
-  c=c+1;
-  var span=document.getElementById('count');
-  span.innerHTML=c.toString();
+ var req=new XMLhttpRequest();
+ req.onreadystatechange=function()
+ {
+     if(req.readyState===XMLhttpRequest.DONE)
+     {
+         if(req.status===100)
+         {
+             var counter=req.responseText;
+             var span=document.getElementById('count');
+             span.innerHTML=counter.toString();
+         }
+     }
+ };
+ 
+request.open('GET','http://gauravmolugu.imad.hasura-app.io/counter',true);
+request.send(null);
 };
+
+
+
+
+
+
+
