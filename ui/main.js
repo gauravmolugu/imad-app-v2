@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var text=document.getElementById('text');
+/*var text=document.getElementById('text');
     text.innerHTML="bla bla bla";
 
 //move the image 
@@ -12,4 +12,4 @@ function moveright(){
 }
 pic.onclick=function(){
     var interval=setInterval(moveright,10);
-};
+};*/
