@@ -15,7 +15,7 @@ pic.onclick=function(){
 };*/
 
 var button=document.getElementById('counter');
-var c=0;
+
 button.onclick=function(){
  var req=new XMLhttpRequest();
  req.onreadystatechange=function()
