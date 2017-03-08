@@ -31,8 +31,8 @@ button.onclick=function(){
      }
  };
  
-request.open('GET','http://gauravmolugu.imad.hasura-app.io/counter',true);
-request.send(null);
+req.open('GET','http://gauravmolugu.imad.hasura-app.io/counter',true);
+req.send(null);
 };
 
 
