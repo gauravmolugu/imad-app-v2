@@ -20,9 +20,9 @@ button.onclick=function(){
  var req=new XMLHttpRequest();
  req.onreadystatechange=function()
  {
-     if(req.readyState===XMLHttpRequest.DONE)
+     if(req.readyState == XMLHttpRequest.DONE)
      {
-         if(req.status===200)
+         if(req.status == 200)
          {
              var counter=req.responseText;
              var span=document.getElementById('count');
