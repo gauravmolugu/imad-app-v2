@@ -86,7 +86,10 @@ return temp;
 app.get('/ammu', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','ammu.html'));
 });
-
+counter=0;
+app.get('/counter',function(req,res){
+   counter=counter+1; 
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
