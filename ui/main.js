@@ -17,10 +17,10 @@ pic.onclick=function(){
 var button=document.getElementById('counter');
 
 button.onclick=function(){
- var req=new XMLhttpRequest();
+ var req=new XMLHttpRequest();
  req.onreadystatechange=function()
  {
-     if(req.readyState===XMLhttpRequest.DONE)
+     if(req.readyState===XMLHttpRequest.DONE)
      {
          if(req.status===100)
          {
