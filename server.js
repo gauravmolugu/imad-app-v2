@@ -67,7 +67,7 @@ var temp=`
         <hr/>
     <div class="center">
          <div>
-            <img src="/ui/asd.jpg" class="img-large"/>
+            <img src="/ui/asd.jpg" class="img-medium"/>
         </div>
         ${heading}
         </div>
