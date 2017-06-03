@@ -122,8 +122,8 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/name:bla', function (req, res)
 {
-   var bla=req.params.bla;
-   res.send(articleone(articles[bla]));
+   var a=req.params.bla;
+   res.send(articleone(articles[a]));
 });
 
 
