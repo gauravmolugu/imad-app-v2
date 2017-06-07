@@ -11,7 +11,7 @@ var config={
     database: 'gaurav',
     host: '127.0.0.1',
     port:'5432',
-    password: process.env.DB_PASSWORD
+    password: 'adminer login password'
 };
 
 var articles= {
